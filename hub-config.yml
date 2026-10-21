@@ -4,7 +4,7 @@ metadata:
   name: Awesome Copilot Hub
   description: A list of agentic primitives curated by Awesome Copilot Community
   maintainer: Waldek Herka
-  updatedAt: "2026-07-02T22:02:24.607Z"
+  updatedAt: "2026-10-21T00:00:00.000Z"
 sources:
   - id: community-collections
     name: Amadeus Community Collections (Official)
@@ -15,6 +15,15 @@ sources:
     metadata:
       description: Official Amadeus Community sources for open source collections
       homepage: https://github.com/AmadeusITGroup/community-collections
+  - id: gsf-reference-implementations
+    name: Green Software Foundation Reference Implementations
+    type: github
+    url: https://github.com/wherka-ama/reference-implementations
+    enabled: true
+    priority: 10
+    metadata:
+      description: Green Software Foundation reference implementations, SCI for AI specifications, and sustainable coding primitives
+      homepage: https://github.com/wherka-ama/reference-implementations
   - id: awesome-copilot-skills-official
     name: Awesome Copilot Skills (Official)
     type: skills
@@ -301,6 +310,25 @@ profiles:
         version: latest
         source: awesome-copilot-skills-official
         required: true
+
+  - id: green-software-specialist
+    name: Green Software & Sustainable AI
+    description: Sustainable software engineering, Green Software Foundation patterns, and SCI for AI carbon/energy measurement
+    icon: "🌱"
+    path: ["Domains"]
+    bundles:
+      - id: wherka-ama-reference-implementations-green-code
+        version: latest
+        source: gsf-reference-implementations
+        required: true
+      - id: wherka-ama-reference-implementations-sci-for-ai
+        version: latest
+        source: gsf-reference-implementations
+        required: true
+      - id: wherka-ama-reference-implementations-gsf-complete
+        version: latest
+        source: gsf-reference-implementations
+        required: false
 
   # Languages
   - id: javascript-developer
